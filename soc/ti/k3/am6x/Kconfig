@@ -32,13 +32,6 @@ config SOC_SERIES_AM6X_R5
 	select UART_NS16550_ACCESS_WORD_ONLY if UART_NS16550
 	select SOC_EARLY_INIT_HOOK
 
-config SOC_SERIES_AM261X_R5
-	select ARM
-	select CPU_CORTEX_R5
-	# select VIM
-	select UART_NS16550_ACCESS_WORD_ONLY if UART_NS16550
-	select SOC_EARLY_INIT_HOOK  #purpose of this unknown
-
 config SOC_PART_NUMBER
 	default "AM6232" if SOC_AM6232_A53
 	default "AM6232" if SOC_AM6232_M4

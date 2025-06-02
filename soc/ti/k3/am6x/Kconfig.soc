@@ -23,13 +23,6 @@ config SOC_SERIES_AM6X_R5
 	help
 	  Enable support for AM6X R5 Series.
 
-config SOC_SERIES_AM261X_R5
-	bool
-	select SOC_SERIES_AM261X
-	select SOC_FAMILY_TI_K3
-	help	
-		Enable support for AM261X R5 Series
-
 config SOC_AM6234_A53
 	bool
 	select SOC_SERIES_AM6X_A53
@@ -76,4 +69,3 @@ config SOC
 	default "am6442" if SOC_AM6442_M4
 	default "j721e" if SOC_J721E_MAIN_R5F0_0
 	default "j722s" if SOC_J722S_MAIN_R5F0_0 || SOC_J722S_MCU_R5F0_0
-	default "am261x" if SOC_AM261X_R5F0_0
