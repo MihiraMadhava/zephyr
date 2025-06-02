@@ -26,6 +26,7 @@ config SOC_SERIES_AM6X_R5
 config SOC_SERIES_AM261X_R5
 	bool
 	select SOC_SERIES_AM261X
+	select SOC_FAMILY_TI_K3
 	help	
 		Enable support for AM261X R5 Series
 
